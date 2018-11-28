@@ -1,9 +1,8 @@
 package com.jakubsprega.untestable.code.f;
 
-import com.google.common.io.CharStreams;
+import com.google.common.annotations.VisibleForTesting;
 import com.google.gson.Gson;
 
-import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.Charset;
@@ -21,10 +20,17 @@ public class GoogleClient {
 
     private final String googleApiUrl;
     private final Charset charset;
+	private ContentProvider provider;
 
-    public GoogleClient(String googleApiUrl, Charset charset) {
+	public GoogleClient(String googleApiUrl, Charset charset) {
+		this(googleApiUrl, charset, new URLContentProvider(charset));
+	}
+	
+	@VisibleForTesting
+    public GoogleClient(String googleApiUrl, Charset charset, ContentProvider provider) {
         this.googleApiUrl = googleApiUrl;
         this.charset = charset;
+        this.provider = provider;
     }
 
     public GoogleResult search(String searchPhrase) throws Exception {
@@ -33,9 +39,7 @@ public class GoogleClient {
         );
 
         URL url = new URL(googleRequestUrl);
-        String rawJsonGoogleResponse = CharStreams.toString(
-            new InputStreamReader(url.openStream(), charset)
-        );
+        String rawJsonGoogleResponse = provider.provideContent(url); 
 
         GoogleResult results = new Gson().fromJson(rawJsonGoogleResponse, GoogleResult.class);
 
