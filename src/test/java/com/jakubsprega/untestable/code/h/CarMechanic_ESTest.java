@@ -21,7 +21,7 @@ import org.evosuite.runtime.EvoRunnerParameters;
 import org.evosuite.runtime.ViolatedAssumptionAnswer;
 import org.junit.runner.RunWith;
 
-@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true, separateClassLoader = true) 
+@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true, separateClassLoader = false) 
 public class CarMechanic_ESTest extends CarMechanic_ESTest_scaffolding {
 
   @Test(timeout = 4000)
@@ -111,11 +111,13 @@ public class CarMechanic_ESTest extends CarMechanic_ESTest_scaffolding {
       }
   }
 
-  @Test(timeout = 4000)
-  public void test6()  throws Throwable  {
-      CarMechanic carMechanic0 = new CarMechanic();
-      Car car0 = mock(Car.class, new ViolatedAssumptionAnswer());
-      Engine engine0 = carMechanic0.unmountEngine(car0);
-      assertNull(engine0);
-  }
+	@Test(timeout = 4000)
+	public void test6() throws Throwable {
+		CarMechanic carMechanic0 = new CarMechanic();
+		Cylinder cylinder = new Cylinder();
+		Engine en = new Engine(cylinder);
+		Car car0 = new Car(en, new Body(), new Chassis(new Silencer()));
+		Engine engine0 = carMechanic0.unmountEngine(car0);
+		assertNotNull(engine0);
+	}
 }

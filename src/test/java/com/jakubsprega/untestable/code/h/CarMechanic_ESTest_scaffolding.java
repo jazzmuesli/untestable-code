@@ -39,7 +39,7 @@ public class CarMechanic_ESTest_scaffolding {
     setSystemProperties();
     initializeClasses();
     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
-    try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+//    try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
   } 
 
   @AfterClass 
@@ -96,9 +96,9 @@ public class CarMechanic_ESTest_scaffolding {
       "com.jakubsprega.untestable.code.h.Engine"
     );
   } 
-  private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
-    mock(Class.forName("com.jakubsprega.untestable.code.h.Car", false, CarMechanic_ESTest_scaffolding.class.getClassLoader()));
-  }
+//  private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+//    mock(Class.forName("com.jakubsprega.untestable.code.h.Car", false, CarMechanic_ESTest_scaffolding.class.getClassLoader()));
+//  }
 
   private static void resetClasses() {
     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(CarMechanic_ESTest_scaffolding.class.getClassLoader()); 
