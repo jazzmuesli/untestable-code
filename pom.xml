@@ -115,6 +115,9 @@
 				<groupId>org.evosuite.plugins</groupId>
 				<artifactId>evosuite-maven-plugin</artifactId>
 				<version>${evosuiteVersion}</version>
+				<configuration>
+					<extraArgs> -Duse_separate_classloader=false </extraArgs>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>

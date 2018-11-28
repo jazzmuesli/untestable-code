@@ -22,14 +22,14 @@ public class GoogleClient {
     private final String googleApiUrl;
     private final Charset charset;
 
-<span class="nc" id="L25">    public GoogleClient(String googleApiUrl, Charset charset) {</span>
-<span class="nc" id="L26">        this.googleApiUrl = googleApiUrl;</span>
-<span class="nc" id="L27">        this.charset = charset;</span>
-<span class="nc" id="L28">    }</span>
+<span class="fc" id="L25">    public GoogleClient(String googleApiUrl, Charset charset) {</span>
+<span class="fc" id="L26">        this.googleApiUrl = googleApiUrl;</span>
+<span class="fc" id="L27">        this.charset = charset;</span>
+<span class="fc" id="L28">    }</span>
 
     public GoogleResult search(String searchPhrase) throws Exception {
-<span class="nc" id="L31">        String googleRequestUrl = String.format(</span>
-<span class="nc" id="L32">            &quot;%s%s&quot;, googleApiUrl, URLEncoder.encode(searchPhrase, charset.name())</span>
+<span class="fc" id="L31">        String googleRequestUrl = String.format(</span>
+<span class="fc" id="L32">            &quot;%s%s&quot;, googleApiUrl, URLEncoder.encode(searchPhrase, charset.name())</span>
         );
 
 <span class="nc" id="L35">        URL url = new URL(googleRequestUrl);</span>

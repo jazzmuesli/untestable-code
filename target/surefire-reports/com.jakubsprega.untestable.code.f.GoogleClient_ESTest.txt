@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.jakubsprega.untestable.code.f.GoogleClient_ESTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.jakubsprega.untestable.code.f.GoogleClient_ESTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.jakubsprega.untestable.code.f.GoogleClient_ESTest

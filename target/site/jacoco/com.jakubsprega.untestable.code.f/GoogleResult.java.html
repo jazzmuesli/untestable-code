@@ -2,65 +2,65 @@
 
 import java.util.List;
 
-<span class="nc" id="L5">public class GoogleResult {</span>
+<span class="fc" id="L5">public class GoogleResult {</span>
 
     private ResponseData responseData;
 
     public ResponseData getResponseData() {
-<span class="nc" id="L10">        return responseData;</span>
+<span class="fc" id="L10">        return responseData;</span>
     }
 
     public void setResponseData(ResponseData responseData) {
-<span class="nc" id="L14">        this.responseData = responseData;</span>
-<span class="nc" id="L15">    }</span>
+<span class="fc" id="L14">        this.responseData = responseData;</span>
+<span class="fc" id="L15">    }</span>
 
     @Override
     public String toString() {
-<span class="nc" id="L19">        return &quot;ResponseData[&quot; + responseData + &quot;]&quot;;</span>
+<span class="fc" id="L19">        return &quot;ResponseData[&quot; + responseData + &quot;]&quot;;</span>
     }
 
-<span class="nc" id="L22">    static class ResponseData {</span>
+<span class="fc" id="L22">    static class ResponseData {</span>
 
         private List&lt;Result&gt; results;
 
         public List&lt;Result&gt; getResults() {
-<span class="nc" id="L27">            return results;</span>
+<span class="fc" id="L27">            return results;</span>
         }
 
         public void setResults(List&lt;Result&gt; results) {
-<span class="nc" id="L31">            this.results = results;</span>
-<span class="nc" id="L32">        }</span>
+<span class="fc" id="L31">            this.results = results;</span>
+<span class="fc" id="L32">        }</span>
 
         @Override
         public String toString() {
-<span class="nc" id="L36">            return &quot;Results[&quot; + results + &quot;]&quot;;</span>
+<span class="fc" id="L36">            return &quot;Results[&quot; + results + &quot;]&quot;;</span>
         }
     }
 
-<span class="nc" id="L40">    static class Result {</span>
+<span class="fc" id="L40">    static class Result {</span>
 
         private String url;
         private String title;
 
         public String getUrl() {
-<span class="nc" id="L46">            return url;</span>
+<span class="fc" id="L46">            return url;</span>
         }
 
         public String getTitle() {
-<span class="nc" id="L50">            return title;</span>
+<span class="fc" id="L50">            return title;</span>
         }
 
         public void setUrl(String url) {
-<span class="nc" id="L54">            this.url = url;</span>
-<span class="nc" id="L55">        }</span>
+<span class="fc" id="L54">            this.url = url;</span>
+<span class="fc" id="L55">        }</span>
 
         public void setTitle(String title) {
-<span class="nc" id="L58">            this.title = title;</span>
-<span class="nc" id="L59">        }</span>
+<span class="fc" id="L58">            this.title = title;</span>
+<span class="fc" id="L59">        }</span>
 
         @Override
         public String toString() {
-<span class="nc" id="L63">            return &quot;Result[url:&quot; + url + &quot;,title:&quot; + title + &quot;]&quot;;</span>
+<span class="fc" id="L63">            return &quot;Result[url:&quot; + url + &quot;,title:&quot; + title + &quot;]&quot;;</span>
         }
     }
 }

@@ -3,39 +3,39 @@
 import com.jakubsprega.untestable.code.api.Carrier;
 import com.jakubsprega.untestable.code.api.GsmModule;
 
-<span class="nc" id="L6">public class AppleGsmModule implements GsmModule {</span>
+<span class="fc" id="L6">public class AppleGsmModule implements GsmModule {</span>
 
     private Carrier carrier;
 
     public void connect() {
-<span class="nc" id="L11">        System.out.println(</span>
-<span class="nc" id="L12">            String.format(&quot;Connecting to %s&quot;, carrier.getName())</span>
+<span class="fc" id="L11">        System.out.println(</span>
+<span class="fc" id="L12">            String.format(&quot;Connecting to %s&quot;, carrier.getName())</span>
         );
 
-<span class="nc" id="L15">        System.out.println(&quot;Connected&quot;);</span>
-<span class="nc" id="L16">    }</span>
+<span class="fc" id="L15">        System.out.println(&quot;Connected&quot;);</span>
+<span class="fc" id="L16">    }</span>
 
     public void disconnect() {
-<span class="nc" id="L19">        System.out.println(</span>
-<span class="nc" id="L20">            String.format(&quot;Disconnecting from %s&quot;, carrier.getName())</span>
+<span class="fc" id="L19">        System.out.println(</span>
+<span class="fc" id="L20">            String.format(&quot;Disconnecting from %s&quot;, carrier.getName())</span>
         );
 
-<span class="nc" id="L23">        System.out.println(&quot;Disconnected&quot;);</span>
-<span class="nc" id="L24">    }</span>
+<span class="fc" id="L23">        System.out.println(&quot;Disconnected&quot;);</span>
+<span class="fc" id="L24">    }</span>
     
     public void sendSMS(String to, String message) {
-<span class="nc" id="L27">        System.out.println(</span>
-<span class="nc" id="L28">            String.format(&quot;Sending message to: %s content: %s&quot;, to, message)</span>
+<span class="fc" id="L27">        System.out.println(</span>
+<span class="fc" id="L28">            String.format(&quot;Sending message to: %s content: %s&quot;, to, message)</span>
         );
-<span class="nc" id="L30">        System.out.println(&quot;Message sent&quot;);</span>
-<span class="nc" id="L31">    }</span>
+<span class="fc" id="L30">        System.out.println(&quot;Message sent&quot;);</span>
+<span class="fc" id="L31">    }</span>
 
     public Carrier getCarrier() {
-<span class="nc" id="L34">        return carrier;</span>
+<span class="fc" id="L34">        return carrier;</span>
     }
 
     public void setCarrier(Carrier carrier) {
-<span class="nc" id="L38">        this.carrier = carrier;</span>
-<span class="nc" id="L39">    }</span>
+<span class="fc" id="L38">        this.carrier = carrier;</span>
+<span class="fc" id="L39">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

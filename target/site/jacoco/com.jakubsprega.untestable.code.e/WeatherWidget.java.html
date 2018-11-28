@@ -4,16 +4,16 @@
  *
  * @author jakubsprega
  */
-<span class="nc" id="L7">public class WeatherWidget {</span>
+<span class="fc" id="L7">public class WeatherWidget {</span>
 
     //52.2297700 21.0117800
     public WeatherIcon getWeatherIcon(double latitude, double longitude) {
-<span class="nc" id="L11">        int temp = YahooWeatherHelper.getTemp(latitude, longitude);</span>
+<span class="fc" id="L11">        int temp = YahooWeatherHelper.getTemp(latitude, longitude);</span>
 
-<span class="nc bnc" id="L13" title="All 2 branches missed.">        if (temp &lt;= 0) {</span>
+<span class="pc bpc" id="L13" title="1 of 2 branches missed.">        if (temp &lt;= 0) {</span>
 <span class="nc" id="L14">            return WeatherIcon.COLD;</span>
-<span class="nc bnc" id="L15" title="All 2 branches missed.">        } else if (temp &lt; 15) {</span>
-<span class="nc" id="L16">            return WeatherIcon.COOL;</span>
+<span class="pc bpc" id="L15" title="1 of 2 branches missed.">        } else if (temp &lt; 15) {</span>
+<span class="fc" id="L16">            return WeatherIcon.COOL;</span>
         } else {
 <span class="nc" id="L18">            return WeatherIcon.WARM;</span>
         }

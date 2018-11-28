@@ -4,24 +4,24 @@ import com.jakubsprega.untestable.code.api.GsmModule;
 import com.jakubsprega.untestable.code.api.Phone;
 import com.jakubsprega.untestable.code.api.SmsMessage;
 
-<span class="nc" id="L7">public class IPhone implements Phone {</span>
+<span class="fc" id="L7">public class IPhone implements Phone {</span>
 
     private GsmModule gsmModule;
     
     public void sendSMS(SmsMessage sms) {
-<span class="nc" id="L12">        gsmModule.connect();</span>
-<span class="nc" id="L13">        gsmModule.sendSMS(</span>
-<span class="nc" id="L14">            sms.getReceiver(), sms.getContent()</span>
+<span class="fc" id="L12">        gsmModule.connect();</span>
+<span class="fc" id="L13">        gsmModule.sendSMS(</span>
+<span class="fc" id="L14">            sms.getReceiver(), sms.getContent()</span>
         );
-<span class="nc" id="L16">        gsmModule.disconnect();</span>
-<span class="nc" id="L17">    }</span>
+<span class="fc" id="L16">        gsmModule.disconnect();</span>
+<span class="fc" id="L17">    }</span>
 
     public GsmModule getGsmModule() {
-<span class="nc" id="L20">        return gsmModule;</span>
+<span class="fc" id="L20">        return gsmModule;</span>
     }
 
     public void setGsmModule(GsmModule gsmModule) {
-<span class="nc" id="L24">        this.gsmModule = gsmModule;</span>
-<span class="nc" id="L25">    }</span>
+<span class="fc" id="L24">        this.gsmModule = gsmModule;</span>
+<span class="fc" id="L25">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

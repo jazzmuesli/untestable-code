@@ -7,19 +7,19 @@ import com.jakubsprega.untestable.code.api.GsmModule;
  *
  * @author jakubsprega
  */
-<span class="nc" id="L10">public class SamsungGsmModule implements GsmModule {</span>
+<span class="fc" id="L10">public class SamsungGsmModule implements GsmModule {</span>
 
     public void connect() {
-<span class="nc" id="L13">        boolean connected = false;</span>
-<span class="nc" id="L14">        System.out.println(&quot;Connecting&quot;);</span>
-<span class="nc bnc" id="L15" title="All 2 branches missed.">        if (!connected) {</span>
-<span class="nc" id="L16">            throw new IllegalStateException(&quot;Could not connect to ...&quot;);</span>
+<span class="fc" id="L13">        boolean connected = false;</span>
+<span class="fc" id="L14">        System.out.println(&quot;Connecting&quot;);</span>
+<span class="pc bpc" id="L15" title="1 of 2 branches missed.">        if (!connected) {</span>
+<span class="fc" id="L16">            throw new IllegalStateException(&quot;Could not connect to ...&quot;);</span>
         }
 <span class="nc" id="L18">    }</span>
 
     public void disconnect() {
-<span class="nc" id="L21">        System.out.println(&quot;Disconnecting&quot;);</span>
-<span class="nc" id="L22">    }</span>
+<span class="fc" id="L21">        System.out.println(&quot;Disconnecting&quot;);</span>
+<span class="fc" id="L22">    }</span>
 
     public void sendSMS(String to, String message) {
 <span class="nc" id="L25">        connect();</span>

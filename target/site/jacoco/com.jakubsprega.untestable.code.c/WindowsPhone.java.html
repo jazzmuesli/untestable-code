@@ -13,14 +13,14 @@ public class WindowsPhone implements Phone {
 
     private final GsmModule gsmModule;
 
-<span class="nc" id="L16">    public WindowsPhone() {</span>
-<span class="nc" id="L17">        gsmModule = new WindowsGsmModule();</span>
+<span class="fc" id="L16">    public WindowsPhone() {</span>
+<span class="fc" id="L17">        gsmModule = new WindowsGsmModule();</span>
 <span class="nc" id="L18">        init();</span>
 <span class="nc" id="L19">    }</span>
 
     private void init() {
-<span class="nc" id="L22">        System.out.println(&quot;Connecting to windows store&quot;);</span>
-<span class="nc" id="L23">        throw new IllegalStateException(&quot;Could not connect to windows store&quot;);</span>
+<span class="fc" id="L22">        System.out.println(&quot;Connecting to windows store&quot;);</span>
+<span class="fc" id="L23">        throw new IllegalStateException(&quot;Could not connect to windows store&quot;);</span>
     }
 
     public void sendSMS(SmsMessage sms) {

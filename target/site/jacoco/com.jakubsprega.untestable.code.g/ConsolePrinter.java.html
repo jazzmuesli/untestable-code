@@ -5,7 +5,7 @@
  * 
  * @author jakubsprega
  */
-<span class="nc" id="L8">public class ConsolePrinter {</span>
+<span class="fc" id="L8">public class ConsolePrinter {</span>
     
     
     /**
@@ -15,8 +15,8 @@
      * @param textFormat text format
      */
     public void print(String text, TextFormat textFormat){
-<span class="nc" id="L18">        System.out.println(formatText(text, textFormat));</span>
-<span class="nc" id="L19">    }</span>
+<span class="fc" id="L18">        System.out.println(formatText(text, textFormat));</span>
+<span class="fc" id="L19">    }</span>
     
     /**
      * Format text according to given {@link TextFormat}
@@ -26,13 +26,13 @@
      * @return formatted text
      */
     public String formatText(String text, TextFormat textFormat) {
-<span class="nc bnc" id="L29" title="All 4 branches missed.">        switch(textFormat){</span>
+<span class="pc bpc" id="L29" title="2 of 4 branches missed.">        switch(textFormat){</span>
             case NORMAL:
-<span class="nc" id="L31">                return text;</span>
+<span class="fc" id="L31">                return text;</span>
             case LOWERCASE:
 <span class="nc" id="L33">                return text.toLowerCase();</span>
             case UPPERCASE:
-<span class="nc" id="L35">                return text.toUpperCase();</span>
+<span class="fc" id="L35">                return text.toUpperCase();</span>
             default:
 <span class="nc" id="L37">                return text;</span>
         }

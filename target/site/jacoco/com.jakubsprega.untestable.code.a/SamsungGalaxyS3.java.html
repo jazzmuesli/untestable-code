@@ -7,18 +7,18 @@ import com.jakubsprega.untestable.code.api.SmsMessage;
 import java.util.ArrayList;
 import java.util.List;
 
-<span class="nc" id="L10">public class SamsungGalaxyS3 implements Phone {</span>
+<span class="fc" id="L10">public class SamsungGalaxyS3 implements Phone {</span>
 
-<span class="nc" id="L12">    private List&lt;SmsMessage&gt; sentMessages = new ArrayList&lt;SmsMessage&gt;();</span>
+<span class="fc" id="L12">    private List&lt;SmsMessage&gt; sentMessages = new ArrayList&lt;SmsMessage&gt;();</span>
 
     public void sendSMS(SmsMessage sms) {
-<span class="nc" id="L15">        GsmModule gsmModule = new SamsungGsmModule();</span>
+<span class="fc" id="L15">        GsmModule gsmModule = new SamsungGsmModule();</span>
 <span class="nc" id="L16">        gsmModule.sendSMS(sms.getReceiver(), sms.getContent());</span>
 <span class="nc" id="L17">        sentMessages.add(sms);</span>
 <span class="nc" id="L18">    }</span>
 
     public List&lt;SmsMessage&gt; getSentMessages() {
-<span class="nc" id="L21">        return sentMessages;</span>
+<span class="fc" id="L21">        return sentMessages;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

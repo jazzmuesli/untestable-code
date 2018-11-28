@@ -13,6 +13,7 @@ com/jakubsprega/untestable/code/d/OutgoingCall_ESTest.class
 com/jakubsprega/untestable/code/a/SamsungGsmModule_ESTest_scaffolding.class
 com/jakubsprega/untestable/code/f/GoogleClient_ESTest.class
 com/jakubsprega/untestable/code/h/CarMechanic_ESTest.class
+com/jakubsprega/untestable/code/b/VirginMobile_ESTest_scaffolding.class
 com/jakubsprega/untestable/code/h/Chassis_ESTest_scaffolding.class
 com/jakubsprega/untestable/code/d/PhoneSettings_ESTest_scaffolding.class
 com/jakubsprega/untestable/code/e/WeatherWidget_ESTest.class
@@ -31,6 +32,7 @@ com/jakubsprega/untestable/code/a/SamsungGalaxyS3_ESTest_scaffolding.class
 com/jakubsprega/untestable/code/h/Engine_ESTest_scaffolding.class
 com/jakubsprega/untestable/code/b/IPhone_ESTest_scaffolding.class
 com/jakubsprega/untestable/code/d/OutgoingCall_ESTest_scaffolding.class
+com/jakubsprega/untestable/code/b/VirginMobile_ESTest.class
 com/jakubsprega/untestable/code/h/Chassis_ESTest.class
 com/jakubsprega/untestable/code/h/Cylinder_ESTest_scaffolding.class
 com/jakubsprega/untestable/code/d/Call_ESTest.class

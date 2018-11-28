@@ -7,16 +7,16 @@ import java.net.URL;
  *
  * @author jakubsprega
  */
-<span class="nc" id="L10">public class YahooWeatherHelper {</span>
+<span class="fc" id="L10">public class YahooWeatherHelper {</span>
 
     public static final String WEATHER_SERVICE_BASE_URL = &quot;http://weather.yahooapis.com/forecastrss&quot;;
 
     public static int getTemp(double latitude, double longitude) {
         try {
-<span class="nc" id="L16">            URL obj = new URL(WEATHER_SERVICE_BASE_URL);</span>
-<span class="nc" id="L17">            HttpURLConnection con = (HttpURLConnection) obj.openConnection();</span>
-<span class="nc" id="L18">            con.connect();</span>
-<span class="nc" id="L19">            return 10;</span>
+<span class="fc" id="L16">            URL obj = new URL(WEATHER_SERVICE_BASE_URL);</span>
+<span class="fc" id="L17">            HttpURLConnection con = (HttpURLConnection) obj.openConnection();</span>
+<span class="fc" id="L18">            con.connect();</span>
+<span class="fc" id="L19">            return 10;</span>
 <span class="nc" id="L20">        } catch (Exception ex) {</span>
 <span class="nc" id="L21">            throw new RuntimeException(ex);</span>
         }
