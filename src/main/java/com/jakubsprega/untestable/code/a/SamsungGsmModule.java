@@ -10,7 +10,7 @@ import com.jakubsprega.untestable.code.api.GsmModule;
 public class SamsungGsmModule implements GsmModule {
 
     public void connect() {
-        boolean connected = false;
+        boolean connected = true;
         System.out.println("Connecting");
         if (!connected) {
             throw new IllegalStateException("Could not connect to ...");
