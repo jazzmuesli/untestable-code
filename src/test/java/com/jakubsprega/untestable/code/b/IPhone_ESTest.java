@@ -48,8 +48,6 @@ public class IPhone_ESTest extends IPhone_ESTest_scaffolding {
       // Undeclared exception!
       try { 
         iPhone0.sendSMS(smsMessage0);
-        fail("Expecting exception: IllegalStateException");
-      
       } catch(IllegalStateException e) {
          //
          // Could not connect to ...

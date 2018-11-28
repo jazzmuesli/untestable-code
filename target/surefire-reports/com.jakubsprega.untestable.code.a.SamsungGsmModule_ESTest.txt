@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.jakubsprega.untestable.code.a.SamsungGsmModule_ESTest
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.jakubsprega.untestable.code.a.SamsungGsmModule_ESTest

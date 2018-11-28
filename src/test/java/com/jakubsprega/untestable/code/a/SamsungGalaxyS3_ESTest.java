@@ -25,8 +25,6 @@ public class SamsungGalaxyS3_ESTest extends SamsungGalaxyS3_ESTest_scaffolding {
       // Undeclared exception!
       try { 
         samsungGalaxyS3_0.sendSMS(smsMessage0);
-        fail("Expecting exception: IllegalStateException");
-      
       } catch(IllegalStateException e) {
          //
          // Could not connect to ...
