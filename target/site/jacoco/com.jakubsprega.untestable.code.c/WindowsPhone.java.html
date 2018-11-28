@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WindowsPhone.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">untestable-code</a> &gt; <a href="index.source.html" class="el_package">com.jakubsprega.untestable.code.c</a> &gt; <span class="el_source">WindowsPhone.java</span></div><h1>WindowsPhone.java</h1><pre class="source lang-java linenums">package com.jakubsprega.untestable.code.c;
+
+import com.jakubsprega.untestable.code.api.GsmModule;
+import com.jakubsprega.untestable.code.api.Phone;
+import com.jakubsprega.untestable.code.api.SmsMessage;
+
+/**
+ * Windows phone
+ *
+ * @author jakubsprega
+ */
+public class WindowsPhone implements Phone {
+
+    private final GsmModule gsmModule;
+
+<span class="nc" id="L16">    public WindowsPhone() {</span>
+<span class="nc" id="L17">        gsmModule = new WindowsGsmModule();</span>
+<span class="nc" id="L18">        init();</span>
+<span class="nc" id="L19">    }</span>
+
+    private void init() {
+<span class="nc" id="L22">        System.out.println(&quot;Connecting to windows store&quot;);</span>
+<span class="nc" id="L23">        throw new IllegalStateException(&quot;Could not connect to windows store&quot;);</span>
+    }
+
+    public void sendSMS(SmsMessage sms) {
+<span class="nc" id="L27">        gsmModule.sendSMS(</span>
+<span class="nc" id="L28">            sms.getReceiver(), sms.getContent()</span>
+        );
+<span class="nc" id="L30">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

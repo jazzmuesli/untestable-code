@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AppleGsmModule.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">untestable-code</a> &gt; <a href="index.source.html" class="el_package">com.jakubsprega.untestable.code.b</a> &gt; <span class="el_source">AppleGsmModule.java</span></div><h1>AppleGsmModule.java</h1><pre class="source lang-java linenums">package com.jakubsprega.untestable.code.b;
+
+import com.jakubsprega.untestable.code.api.Carrier;
+import com.jakubsprega.untestable.code.api.GsmModule;
+
+<span class="nc" id="L6">public class AppleGsmModule implements GsmModule {</span>
+
+    private Carrier carrier;
+
+    public void connect() {
+<span class="nc" id="L11">        System.out.println(</span>
+<span class="nc" id="L12">            String.format(&quot;Connecting to %s&quot;, carrier.getName())</span>
+        );
+
+<span class="nc" id="L15">        System.out.println(&quot;Connected&quot;);</span>
+<span class="nc" id="L16">    }</span>
+
+    public void disconnect() {
+<span class="nc" id="L19">        System.out.println(</span>
+<span class="nc" id="L20">            String.format(&quot;Disconnecting from %s&quot;, carrier.getName())</span>
+        );
+
+<span class="nc" id="L23">        System.out.println(&quot;Disconnected&quot;);</span>
+<span class="nc" id="L24">    }</span>
+    
+    public void sendSMS(String to, String message) {
+<span class="nc" id="L27">        System.out.println(</span>
+<span class="nc" id="L28">            String.format(&quot;Sending message to: %s content: %s&quot;, to, message)</span>
+        );
+<span class="nc" id="L30">        System.out.println(&quot;Message sent&quot;);</span>
+<span class="nc" id="L31">    }</span>
+
+    public Carrier getCarrier() {
+<span class="nc" id="L34">        return carrier;</span>
+    }
+
+    public void setCarrier(Carrier carrier) {
+<span class="nc" id="L38">        this.carrier = carrier;</span>
+<span class="nc" id="L39">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
