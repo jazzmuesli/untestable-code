@@ -16,3 +16,5 @@
 [SOLID](https://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29)
 
 [MockWebServer](https://github.com/square/okhttp/tree/master/mockwebserver)
+
+[![Build Status](https://travis-ci.org/jazzmuesli/untestable-code.svg?branch=evosuite-enabled)](https://travis-ci.org/jazzmuesli/untestable-code)
