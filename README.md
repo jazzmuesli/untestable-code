@@ -17,4 +17,4 @@
 
 [MockWebServer](https://github.com/square/okhttp/tree/master/mockwebserver)
 
-[![Build Status](https://travis-ci.org/jazzmuesli/untestable-code.svg?branch=evosuite-enabled)](https://travis-ci.org/jazzmuesli/untestable-code)
+[![Build Status](https://travis-ci.org/jazzmuesli/untestable-code.svg?branch=master)](https://travis-ci.org/jazzmuesli/untestable-code)
