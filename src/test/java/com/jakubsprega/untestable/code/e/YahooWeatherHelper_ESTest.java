@@ -5,7 +5,7 @@
 
 package com.jakubsprega.untestable.code.e;
 
-import org.junit.Test;
+import org.junit.*;
 import static org.junit.Assert.*;
 import com.jakubsprega.untestable.code.e.YahooWeatherHelper;
 import org.evosuite.runtime.EvoRunner;
@@ -15,11 +15,13 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
 public class YahooWeatherHelper_ESTest extends YahooWeatherHelper_ESTest_scaffolding {
 
+  @Ignore
   @Test(timeout = 4000)
   public void test0()  throws Throwable  {
       YahooWeatherHelper yahooWeatherHelper0 = new YahooWeatherHelper();
   }
 
+  @Ignore
   @Test(timeout = 4000)
   public void test1()  throws Throwable  {
       int int0 = YahooWeatherHelper.getTemp(0.0, 0.0);

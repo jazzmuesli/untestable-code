@@ -5,7 +5,7 @@
 
 package com.jakubsprega.untestable.code.e;
 
-import org.junit.Test;
+import org.junit.*;
 import static org.junit.Assert.*;
 import com.jakubsprega.untestable.code.e.WeatherIcon;
 import com.jakubsprega.untestable.code.e.WeatherWidget;
@@ -16,6 +16,7 @@ import org.junit.runner.RunWith;
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
 public class WeatherWidget_ESTest extends WeatherWidget_ESTest_scaffolding {
 
+  @Ignore
   @Test(timeout = 4000)
   public void test0()  throws Throwable  {
       WeatherWidget weatherWidget0 = new WeatherWidget();
