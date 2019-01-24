@@ -1,5 +1,8 @@
 package com.jakubsprega.untestable.code.a;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.jakubsprega.untestable.code.api.GsmModule;
 
 /**
@@ -8,22 +11,23 @@ import com.jakubsprega.untestable.code.api.GsmModule;
  * @author jakubsprega
  */
 public class SamsungGsmModule implements GsmModule {
+	private static final Logger LOG = LoggerFactory.getLogger(SamsungGsmModule.class);
 
     public void connect() {
         boolean connected = true;
-        System.out.println("Connecting");
+        LOG.info("Connecting");
         if (!connected) {
             throw new IllegalStateException("Could not connect to ...");
         }
     }
 
     public void disconnect() {
-        System.out.println("Disconnecting");
+        LOG.info("Disconnecting");
     }
 
     public void sendSMS(String to, String message) {
         connect();
-        System.out.println("Sending sms");
+        LOG.info("Sending sms");
         disconnect();
     }
 }

@@ -2,21 +2,25 @@ package com.jakubsprega.untestable.code.d;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 /**
  *
  * @author jakubsprega
  */
 public class SonyPhone {
-    
+	private static final Logger LOG = LoggerFactory.getLogger(SonyPhone.class);
     public static boolean SERVICE_MODE = false;
     
     public void call(OutgoingCall outgoingCall){
-        System.out.println("Calling...");
+        LOG.info("Calling...");
         PhoneSettings.getInstance().addRecentCall(outgoingCall);
     }
     
     public void answer(IncomingCall call){
-        System.out.println("Answering the phone...");
+        LOG.info("Answering the phone...");
         PhoneSettings.getInstance().addRecentCall(call);
     }
     

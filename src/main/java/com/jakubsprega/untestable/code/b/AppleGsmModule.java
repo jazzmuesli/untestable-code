@@ -1,33 +1,36 @@
 package com.jakubsprega.untestable.code.b;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.jakubsprega.untestable.code.api.Carrier;
 import com.jakubsprega.untestable.code.api.GsmModule;
 
 public class AppleGsmModule implements GsmModule {
-
+	private static final Logger LOG = LoggerFactory.getLogger(AppleGsmModule.class);
     private Carrier carrier;
 
     public void connect() {
-        System.out.println(
+        LOG.info(
             String.format("Connecting to %s", carrier.getName())
         );
 
-        System.out.println("Connected");
+        LOG.info("Connected");
     }
 
     public void disconnect() {
-        System.out.println(
+        LOG.info(
             String.format("Disconnecting from %s", carrier.getName())
         );
 
-        System.out.println("Disconnected");
+        LOG.info("Disconnected");
     }
     
     public void sendSMS(String to, String message) {
-        System.out.println(
+        LOG.info(
             String.format("Sending message to: %s content: %s", to, message)
         );
-        System.out.println("Message sent");
+        LOG.info("Message sent");
     }
 
     public Carrier getCarrier() {

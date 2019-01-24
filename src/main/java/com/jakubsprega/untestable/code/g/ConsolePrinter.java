@@ -1,12 +1,15 @@
 package com.jakubsprega.untestable.code.g;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Console printer
  * 
  * @author jakubsprega
  */
 public class ConsolePrinter {
-    
+	private static final Logger LOG = LoggerFactory.getLogger(ConsolePrinter.class);
     
     /**
      * Prints given text into standard output in given {@link TextFormat}
@@ -15,7 +18,7 @@ public class ConsolePrinter {
      * @param textFormat text format
      */
     public void print(String text, TextFormat textFormat){
-        System.out.println(formatText(text, textFormat));
+        LOG.info(formatText(text, textFormat));
     }
     
     /**

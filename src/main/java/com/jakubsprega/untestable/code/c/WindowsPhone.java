@@ -1,5 +1,8 @@
 package com.jakubsprega.untestable.code.c;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.jakubsprega.untestable.code.api.GsmModule;
 import com.jakubsprega.untestable.code.api.Phone;
 import com.jakubsprega.untestable.code.api.SmsMessage;
@@ -10,7 +13,7 @@ import com.jakubsprega.untestable.code.api.SmsMessage;
  * @author jakubsprega
  */
 public class WindowsPhone implements Phone {
-
+	private static final Logger LOG = LoggerFactory.getLogger(WindowsPhone.class);
     private final GsmModule gsmModule;
 
     public WindowsPhone() {
@@ -19,7 +22,7 @@ public class WindowsPhone implements Phone {
     }
 
     private void init() {
-        System.out.println("Connecting to windows store");
+        LOG.info("Connecting to windows store");
         throw new IllegalStateException("Could not connect to windows store");
     }
 
